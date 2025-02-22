@@ -8,10 +8,7 @@ class CircleWidget(QWidget):
         super().__init__()
         self.setWindowTitle('pup')
         self.setGeometry(100, 100, 400, 400)
-
-
         self.flag = False
-
         self.button = QPushButton("press!", self)
         self.button.clicked.connect(self.toggle_circle)
 
